@@ -47,7 +47,7 @@ class TestDigitalLibraryPage:
     def test_get_metadata_url_from_digital_library_url(self, page_url_valid, metadata_url_valid):
         page = DigitalLibraryPage(page_url_valid)
         metadata_url = page.get_metadata_url()
-        assert iiif_url == "https://images.lib.cam.ac.uk/iiif/MS-DAR-00101-000-00265.jp2/0,1938,3063,1608/1200,630/0/default.jpg"
+        assert get_iiif_image_url == "https://images.lib.cam.ac.uk/iiif/MS-DAR-00101-000-00265.jp2/0,1938,3063,1608/1200,630/0/default.jpg"
 
     # Exercise 5 - add test for expected exception FileNotFoundAtUrl for get_iiif_image_url() here
 

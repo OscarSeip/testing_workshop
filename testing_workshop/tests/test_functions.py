@@ -44,7 +44,7 @@ class TestDigitalLibraryPage:
             page.get_metadata()
 
     # Exercise 2 - add test(s) for get_iiif_image_url() here
-    def test_get_iiif_image_url(self, page_url_valid, metadata_url_valid):
+    def test_get_iiif_image_url(self, page_url_valid):
         page = DigitalLibraryPage(page_url_valid)
         get_iiif_image_url = page.get_metadata_url()
         assert get_iiif_image_url == "https://images.lib.cam.ac.uk/iiif/MS-DAR-00101-000-00265.jp2/0,1938,3063,1608/1200,630/0/default.jpg"

@@ -24,7 +24,8 @@ class TestLetter:
         letter = Letter(letter_xml)  # ARRANGE
         transcription = letter.get_transcription()  # noqa: F841 # ACT
         # Exercise 1 - fill in ASSERTION
-        assert transcription == "Many thanks indeed for your letter. It was most kind and I am immensely gratified."
+        assert transcription == "Charles Robert Darwin was born in Shrewsbury on 12 February 1809, at his family's home,
+    before going to the well-regarded University of Edinburgh Medical School."
 
 
 class TestDigitalLibraryPage:
